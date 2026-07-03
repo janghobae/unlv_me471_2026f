@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-int ledPin = 13;
+int ledPin = 19;
 String command;
 int command_int = 0;
 
@@ -15,6 +15,7 @@ void loop() {
     {
         command = Serial.readString();
         command_int = command.toInt();
+        Serial.println(command_int);
     }
     analogWrite(ledPin, command_int);
 }
