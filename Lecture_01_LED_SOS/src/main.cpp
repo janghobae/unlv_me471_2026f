@@ -13,47 +13,47 @@ void loop() {
     digitalWrite(ledPin, HIGH);
     delay(100);
     digitalWrite(ledPin, LOW);
-    delay(100);
+    delay(100); // symbol space
     digitalWrite(ledPin, HIGH);
     delay(100);
     digitalWrite(ledPin, LOW);
-    delay(100);
+    delay(100); // symbol space
     digitalWrite(ledPin, HIGH);
     delay(100);
     digitalWrite(ledPin, LOW);
 
-    // break
+    // letter space
     delay(300);
 
     // O
     digitalWrite(ledPin, HIGH);
     delay(300);
     digitalWrite(ledPin, LOW);
-    delay(300);
+    delay(100); // symbol space
     digitalWrite(ledPin, HIGH);
     delay(300);
     digitalWrite(ledPin, LOW);
-    delay(300);
+    delay(100); // symbol space
     digitalWrite(ledPin, HIGH);
     delay(300);
     digitalWrite(ledPin, LOW);
 
-    // break
+    // letter space
     delay(300);
 
     // S
     digitalWrite(ledPin, HIGH);
     delay(100);
     digitalWrite(ledPin, LOW);
-    delay(100);
+    delay(100); // symbol space
     digitalWrite(ledPin, HIGH);
     delay(100);
     digitalWrite(ledPin, LOW);
-    delay(100);
+    delay(100); // symbol space
     digitalWrite(ledPin, HIGH);
     delay(100);
     digitalWrite(ledPin, LOW);
 
-    // break
+    // word space
     delay(700);
 }
