@@ -1,21 +1,21 @@
 #include <Arduino.h>
 
 int ledPin = 19;
-int i = 0;
+int ledPWM = 0;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
 }
 
 void loop() {
-  for(i = 0; i <= 255; i += 5)
+  for(ledPWM = 0; ledPWM <= 255; ledPWM += 5)
   {
-    analogWrite(ledPin, i);
+    analogWrite(ledPin, ledPWM);
     delay(10);
   }
-  for(i = 255; i >= 0; i -= 5)
+  for(ledPWM = 255; ledPWM >= 0; ledPWM -= 5)
   {
-    analogWrite(ledPin, i);
+    analogWrite(ledPin, ledPWM);
     delay(10);
   }
 }
