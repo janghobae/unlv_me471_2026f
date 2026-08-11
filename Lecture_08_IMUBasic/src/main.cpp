@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "BNO055_support.h"		//Contains the bridge code between the API and Arduino
+#include <BNO055_support.h>		//Contains the bridge code between the API and Arduino
 #include <Wire.h>
 
 struct bno055_t myBNO;
