@@ -8,9 +8,9 @@ ser = serial.Serial(
 
 while True:
     command = str(input("Input command:"))
-    ser.write(bytes(command, encoding='utf-8'))
+    ser.write(command)
 
-    response = ser.readline().decode().strip()
+    response = ser.readline()
     print(response)
 
 ser.close
