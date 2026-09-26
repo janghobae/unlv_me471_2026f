@@ -4,7 +4,7 @@ import random
 x_data = []
 y_data = []
 
-for i in range(201):
+for i in range(101):
     sensor_value = random.randint(0, 100)
 
     x_data.append(i)
@@ -17,9 +17,6 @@ for i in range(201):
     plt.ylabel("Sensor Value")
     plt.title("Real-Time Sensor Plot")
     plt.grid(True)
-    if len(x_data) > 20:
-        plt.xlim([len(x_data)-20, len(x_data)])
-
-    plt.pause(0.01)
+    plt.pause(0.05)
 
 plt.show()
