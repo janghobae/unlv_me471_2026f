@@ -1,14 +1,11 @@
 import matplotlib.pyplot as plt
 import random
-import time
 
 x_data = []
 y_data = []
 
-plt.ion()
-
-for i in range(50):
-    sensor_value = random.randint(0, 1023)
+for i in range(201):
+    sensor_value = random.randint(0, 100)
 
     x_data.append(i)
     y_data.append(sensor_value)
@@ -20,8 +17,9 @@ for i in range(50):
     plt.ylabel("Sensor Value")
     plt.title("Real-Time Sensor Plot")
     plt.grid(True)
+    if len(x_data) > 20:
+        plt.xlim([len(x_data)-20, len(x_data)])
 
-    plt.pause(0.1)
+    plt.pause(0.01)
 
-plt.ioff()
 plt.show()
