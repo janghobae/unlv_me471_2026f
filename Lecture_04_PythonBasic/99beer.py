@@ -1,6 +1,6 @@
 for bottles in range(99, 1, -1):
 
-    print(str(bottles), 'bottles of beer on the wall,')
+    print(str(bottles), 'bottles of beer on the wall,', end="")
     print(str(bottles), 'bottles of beer.')
     print('Take one down and pass it around,')
 
