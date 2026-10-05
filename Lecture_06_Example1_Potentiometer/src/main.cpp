@@ -11,4 +11,5 @@ void setup() {
 void loop() {
     potValue = analogRead(potPin);
     Serial.println(potValue);
+    delay(100);
 }
