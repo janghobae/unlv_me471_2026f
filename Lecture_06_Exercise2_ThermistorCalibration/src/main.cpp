@@ -19,6 +19,7 @@ void loop() {
     tempRaw = analogRead(tempSensorPin);
     // Serial.println(tempRaw);
     Serial.println(tempCal(tempRaw));
+    delay(100);
 }
 
 float tempCal(float SensorValue) {
