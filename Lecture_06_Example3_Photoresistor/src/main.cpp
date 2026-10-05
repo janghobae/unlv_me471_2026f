@@ -11,4 +11,5 @@ void setup() {
 void loop() {
     prValue = analogRead(photoResist);
     Serial.println(prValue);
+    delay(100);
 }
