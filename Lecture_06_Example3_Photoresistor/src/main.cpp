@@ -5,7 +5,7 @@ int prValue = 0;
 
 void setup() {
     pinMode(photoResist, INPUT);
-    Serial.begin(9600);
+    Serial.begin(115200);
 }
 
 void loop() {
