@@ -4,12 +4,12 @@ int hallPin = A0;
 int hallValue;
 
 void setup() {
-    pinMode(hallPin, INPUT_PULLUP);
+    pinMode(hallPin, INPUT);
     Serial.begin(115200);
 }
 
 void loop() {
-    hallValue = digitalRead(hallPin);
+    hallValue = analogRead(hallPin);
     Serial.println(hallValue);
     delay(100);
 }
