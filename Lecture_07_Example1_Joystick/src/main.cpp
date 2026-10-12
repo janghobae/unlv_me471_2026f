@@ -2,7 +2,7 @@
 
 int xPin = A0;
 int yPin = A1;
-int swPin = 16;
+int swPin = 19;
 
 int xVal = 0;
 int yVal = 0;
@@ -10,14 +10,12 @@ int swVal = 0;
 
 void setup() {
     Serial.begin(115200);
-
     pinMode(xPin, INPUT);
     pinMode(yPin, INPUT);
-    pinMode(swPin, INPUT_PULLUP);
+    pinMode(swPin, INPUT);
 }
 
 void loop() {
-    // put your main code here, to run repeatedly:
     xVal = analogRead(xPin);
     yVal = analogRead(yPin);
     swVal = digitalRead(swPin);
