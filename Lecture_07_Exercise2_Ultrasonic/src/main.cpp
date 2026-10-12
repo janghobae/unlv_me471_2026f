@@ -4,7 +4,7 @@ int trigPin = 14;
 int echoPin = 15;
 
 long duration;
-long distance;
+float distance;
 
 void setup() {
     pinMode(trigPin, OUTPUT);
@@ -17,7 +17,7 @@ void loop() {
     delay(10);
     digitalWrite(trigPin, LOW);
     duration = pulseIn(echoPin, HIGH);
-    distance = (duration/2) / 29.1;
+    distance = (duration/2) * (0.034);
     Serial.println(distance);
     delay(100);
 }
