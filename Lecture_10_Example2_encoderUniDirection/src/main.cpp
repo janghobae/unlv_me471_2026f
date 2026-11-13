@@ -2,7 +2,7 @@
 
 int pinA = 19;
 
-long encoderCount = 0;
+volatile long encoderCount = 0;
 
 void pinACount();
 

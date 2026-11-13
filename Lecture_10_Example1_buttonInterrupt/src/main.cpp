@@ -3,8 +3,8 @@
 int buttonPin = 19;
 
 void buttonISR();
-int buttonCount = 0;
-bool buttonPressed = false;
+volatile int buttonCount = 0;
+volatile bool buttonPressed = false;
 
 void setup() {
     Serial.begin(115200);
