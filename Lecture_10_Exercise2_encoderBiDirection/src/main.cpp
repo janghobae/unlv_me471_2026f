@@ -3,7 +3,7 @@
 int pinA = 19;
 int pinB = 18;
 
-int encoderCount = 0;
+volatile long encoderCount = 0;
 
 void readEncoder();
 

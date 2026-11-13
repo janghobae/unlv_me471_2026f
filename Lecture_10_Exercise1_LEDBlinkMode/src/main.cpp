@@ -4,7 +4,7 @@ int buttonPin = 19;
 int ledPin = 18;
 
 void buttonISR();
-bool blinkFast = false;
+volatile bool blinkFast = false;
 
 void setup() {
     pinMode(buttonPin, INPUT);
