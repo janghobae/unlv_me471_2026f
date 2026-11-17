@@ -18,5 +18,4 @@ void loop() {
   Serial.println(encoderCount);
   
   delay(100);
-  
 }
