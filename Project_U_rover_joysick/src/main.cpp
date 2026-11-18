@@ -26,8 +26,8 @@ void loop() {
     yVal = analogRead(yPin);
     swVal = digitalRead(swPin);
 
-    M1PWM = (xVal - 512) / 1024 * 100 + (yVal - 512) / 1024 * 100;
-    M2PWM = (xVal - 512) / 1024 * 100 - (yVal - 512) / 1024 * 100;
+    M1PWM = (xVal - 512) / 1023 * 100 + (yVal - 512) / 1023 * 100;
+    M2PWM = (xVal - 512) / 1023 * 100 - (yVal - 512) / 1023 * 100;
 
     M1.setDuty(M1PWM);
     M2.setDuty(M2PWM);
