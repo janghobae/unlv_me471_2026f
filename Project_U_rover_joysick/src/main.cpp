@@ -17,7 +17,7 @@ void setup() {
     controller.begin();
     pinMode(xPin, INPUT);
     pinMode(yPin, INPUT);
-    pinMode(swPin, INPUT);
+    pinMode(swPin, INPUT_PULLUP);
 }
 
 void loop() {
