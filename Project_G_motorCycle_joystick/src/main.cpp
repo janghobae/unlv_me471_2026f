@@ -59,7 +59,7 @@ void loop() {
 
     servo1.setAngle(yVal / 1024 * 360);
 
-    M2PWM = k_P * roll + k_D * wy + k_I * roll * 0.01;
+    M2PWM = - k_P * roll - k_D * wy - k_I * roll * 0.01;
 
     delay(10);
 }
