@@ -14,11 +14,6 @@ void setup() {
     Serial.begin(115200);
     Serial.setTimeout(10);
 
-    M1.setDuty(0);
-    M2.setDuty(0);
-    M3.setDuty(0);
-    M4.setDuty(0);
-
     pid1.setControlMode(CL_POSITION);
     pid1.setGains(k_P, k_I, k_D);
 }
